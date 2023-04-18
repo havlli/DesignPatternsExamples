@@ -7,5 +7,5 @@ The Abstract Factory pattern is useful when you want to ensure that a group of r
 
 ----
 
-**Examples in this package:**
-- UIFactory
+**Examples:**
+- **[UIFactory]()**
