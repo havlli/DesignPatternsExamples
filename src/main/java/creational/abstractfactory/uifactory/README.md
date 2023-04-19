@@ -1,3 +1,5 @@
+# UI Factory
+
 Suppose you are building a GUI toolkit that supports different look and feel themes, such as Windows, Mac, and Linux. Each theme has its own set of UI components, such as buttons, menus, and dialogs, that follow a consistent design style.
 
 To implement this, you can define an abstract factory interface called `UIFactory` that defines methods for creating each type of UI component. Then, you can create concrete factory classes that implement this interface for each theme, such as `WindowsUIFactory`, `MacUIFactory`, and `LinuxUIFactory`. Each factory can create UI components that have the same design style and work well together.

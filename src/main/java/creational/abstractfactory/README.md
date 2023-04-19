@@ -8,4 +8,4 @@ The Abstract Factory pattern is useful when you want to ensure that a group of r
 ----
 
 **Examples:**
-- **[UIFactory]()**
+- **[UIFactory](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/creational/abstractfactory/uifactory)**
