@@ -15,7 +15,7 @@ In this approach, the Singleton instance is created when the class is loaded int
 -   Wasteful of system resources if the Singleton instance is not needed very often
 -   The Singleton instance is created even if it is not needed
 
-***[Simple Example]() - [Real Life Example]()***
+***[Simple Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/examples/EagerRegistry.java) - [Real Life Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/Eager%20Initialization.md)***
 ### 2.  Lazy Singleton:
 
 In this approach, the Singleton instance is created only when it is needed for the first time. The advantage of this approach is that it conserves system resources until the Singleton instance is actually needed. The downside is that it requires additional code to ensure thread safety and handle multi-threaded access.
@@ -28,7 +28,7 @@ In this approach, the Singleton instance is created only when it is needed for t
 -   Requires additional code to ensure thread safety and handle multi-threaded access
 -   Initialization may not be complete before any thread can access the instance
 
-***[Simple Example]() - [Real Life Example]()***
+***[Simple Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/examples/LazyRegistry.java) - [Real Life Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/Lazy%20Initialization.md)***
 ### 3.  Singleton with Initialization Holder:
 
 In this approach, the Singleton instance is created when the class is loaded into memory, but the instance is not actually created until it is first needed. This approach provides the benefits of both the Eager Singleton and Lazy Singleton approaches, without their respective downsides.
@@ -43,7 +43,7 @@ In this approach, the Singleton instance is created when the class is loaded int
 **Cons:**
 -   Requires an additional inner class to hold the Singleton instance
 
-***[Simple Example]() - [Real Life Example]()***
+***[Simple Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/examples/LazyRegistryIODH.java) - [Real Life Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/Initialization%20Holder.md)***
 ### 4.  Singleton implemented as an Enum:
 
 In this approach, the Singleton instance is created automatically when the Enum class is loaded into memory. This approach provides a simple and efficient way to implement the Singleton pattern, while also ensuring that there is only one instance of the Singleton class throughout the entire application.
@@ -58,7 +58,7 @@ In this approach, the Singleton instance is created automatically when the Enum 
 -   May not be appropriate for classes with complex initialization requirements
 -   May not be appropriate for classes that require a non-default constructor
 
-***[Simple Example]() - [Real Life Example]()***
+***[Simple Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/examples/RegistryEnum.java) - [Real Life Example](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/creational/singleton/Enum%20Implementation.md)***
 
 ---
 Overall, the choice of Singleton implementation approach depends on the specific requirements of your application. If you need to ensure that the Singleton instance is always available and ready to use, you might choose the Eager Singleton approach. If you need to conserve system resources until the Singleton instance is actually needed, you might choose the Lazy Singleton or Singleton with Initialization Holder approach. If you need a simple and efficient way to implement the Singleton pattern, you might choose the Singleton implemented as an Enum approach.
