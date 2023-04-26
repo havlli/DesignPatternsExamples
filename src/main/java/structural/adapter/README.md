@@ -20,6 +20,6 @@ The Adapter Pattern can be implemented in two ways: class adapters and object ad
 Overall, the Adapter Pattern allows you to create a new object that can work with existing objects that have incompatible interfaces, without changing the existing objects or the client code.
 
 Examples of Adapter Pattern:
-1. Socket Adapters
-2. Legacy Code Integration
-3. Third-Party API Integration
+1. [**Socket Adapters**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Socket%20Adapters.md)
+2. [**Legacy Code Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Legacy%20Code%20Integration.md)
+3. [**Third-Party API Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Third-Party%20API%20Integration.md)
