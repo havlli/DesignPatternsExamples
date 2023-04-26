@@ -20,6 +20,9 @@ The Adapter Pattern can be implemented in two ways: class adapters and object ad
 Overall, the Adapter Pattern allows you to create a new object that can work with existing objects that have incompatible interfaces, without changing the existing objects or the client code.
 
 Examples of Adapter Pattern:
-1. [**Socket Adapters**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Socket%20Adapters.md)
-2. [**Legacy Code Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Legacy%20Code%20Integration.md)
-3. [**Third-Party API Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Third-Party%20API%20Integration.md)
+1. [**Database Adapter**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Database%20Adapter.md)
+2. [**XML Adapter**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/XML%20Adapter.md)
+3. [**Messaging Adapter**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Messaging%20Adapter.md)
+3. [**Socket Adapters**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Socket%20Adapters.md)
+3. [**Legacy Code Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Legacy%20Code%20Integration.md)
+4. [**Third-Party API Integration**](https://github.com/havlli/DesignPatternsExamples/blob/master/src/main/java/structural/adapter/Third-Party%20API%20Integration.md)
