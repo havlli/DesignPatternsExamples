@@ -1,4 +1,4 @@
-## Bridge Pattern
+# Bridge Pattern
 The Bridge design pattern is a structural design pattern that decouples an abstraction from its implementation so that the two can vary independently. In other words, it allows you to separate the interface or abstraction from the implementation details, which can vary independently.
 
 The pattern achieves this by creating two separate class hierarchies: one for the abstraction and another for the implementation. The abstraction defines the interface or the high-level functionality that clients use, while the implementation provides the concrete implementation of the abstraction.
