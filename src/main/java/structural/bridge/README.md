@@ -8,3 +8,10 @@ The Bridge pattern allows the client code to work with the abstraction without k
 The Bridge pattern is particularly useful when you have multiple variants of a system or when you need to support different platforms or devices with varying capabilities. It also helps to avoid a class explosion problem that can arise when you have a large number of classes for each possible combination of the abstraction and implementation.
 
 Overall, the Bridge pattern promotes loose coupling and high cohesion between the abstraction and implementation, making the system more flexible, maintainable, and extensible.
+
+### **Examples**
+1. [Platform Renderer](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/structural/bridge/platformrenderer) - with more explanation
+2. [GUI ToolKit](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/structural/bridge/guitoolkit)
+3. [Audio/Video Player](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/structural/bridge/avplayer)
+4. [Messaging System](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/structural/bridge/messagingsystem)
+5. [Payment Gateways](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/structural/bridge/paymentgateways)
