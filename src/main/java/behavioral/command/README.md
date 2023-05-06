@@ -1,127 +1,36 @@
 
 # Command Pattern
-The Command pattern is a behavioral design pattern that enables the separation of the requester of a certain action (the client) from the object that performs the action (the receiver). It does this by encapsulating the request as an object, which can then be passed around as a parameter or stored for later use. This provides a way to decouple the requester from the receiver, allowing for flexibility and extensibility in the system.
 
-Here's an example of how the Command pattern can be implemented in Java:
+The Command pattern is a behavioral design pattern that encapsulates a request or action as an object, allowing for the requester to be decoupled from the receiver. This allows for more flexible and extensible systems where different requests can be easily added and removed without affecting the rest of the system.
 
-Let's say we have a simple text editor application that can perform various operations such as copy, paste, cut, and undo. We can implement the Command pattern as follows:
+In this pattern, there are four key components:
 
-1.  First, we define a common interface for all commands. This interface will have a single method, `execute()`, which will be implemented by all the concrete command classes.
-```java
-public interface Command {
-    void execute();
-}
-```
-2.  Next, we create concrete command classes that implement the `Command` interface for each of the operations we want to perform. Here, we will create three classes for `CopyCommand`, `PasteCommand`, and `CutCommand`.
-```java
-public class CopyCommand implements Command {
-    private TextEditor textEditor;
-    
-    public CopyCommand(TextEditor textEditor) {
-        this.textEditor = textEditor;
-    }
-    
-    public void execute() {
-        textEditor.copy();
-    }
-}
+1.  Command: This is an interface that defines the `execute()` method, which encapsulates the action to be performed.
 
-public class PasteCommand implements Command {
-    private TextEditor textEditor;
-    
-    public PasteCommand(TextEditor textEditor) {
-        this.textEditor = textEditor;
-    }
-    
-    public void execute() {
-        textEditor.paste();
-    }
-}
+2.  Concrete Command: These are concrete implementations of the `Command` interface that encapsulate specific actions.
 
-public class CutCommand implements Command {
-    private TextEditor textEditor;
-    
-    public CutCommand(TextEditor textEditor) {
-        this.textEditor = textEditor;
-    }
-    
-    public void execute() {
-        textEditor.cut();
-    }
-}
-```
-In the above code, each command class has a reference to the `TextEditor` object, which is the receiver that will perform the actual operation.
+3.  Receiver: This is the object that performs the action.
 
-3.  We can now use the `Command` interface and its concrete implementations to build the text editor application. Here, we will create an `Invoker` class, which is responsible for executing the commands. The `Invoker` class will have a method `setCommand(Command cmd)` to set the command to be executed and a method `executeCommand()` to execute the command.
-```java
-public class Invoker {
-    private Command command;
-    
-    public void setCommand(Command command) {
-        this.command = command;
-    }
-    
-    public void executeCommand() {
-        command.execute();
-    }
-}
-```
-4.  Finally, we create a `TextEditor` class, which is the receiver object that will perform the actual operations. This class will have methods for each operation, such as `copy()`, `paste()`, `cut()`, and `undo()`.
-```java
-public class TextEditor {
-    private String clipboard;
-    private String text;
-    
-    public void copy() {
-        clipboard = text;
-    }
-    
-    public void paste() {
-        text += clipboard;
-    }
-    
-    public void cut() {
-        clipboard = text;
-        text = "";
-    }
-    
-    public void undo() {
-        text = clipboard;
-    }
-}
-```
-5.  To use the Command pattern in the text editor application, we create an instance of the `TextEditor` class and an instance of the `Invoker` class. We then create instances of the concrete command classes and set them on the `Invoker` object using the `setCommand()` method. Finally, we execute the commands using the `executeCommand()` method on the `Invoker` object.
-```java
-public  class  Client {
-	public static void main(String[] args) {
-	    TextEditor textEditor = new TextEditor();
-	    Invoker invoker = new Invoker();
+4.  Invoker: This is the object that requests the action to be performed. It contains a reference to the `Command` object and calls its `execute()` method.
 
-	    // Create concrete command instances
-	    Command copyCommand = new CopyCommand(textEditor);
-	    Command pasteCommand = new PasteCommand(textEditor);
-	    Command cutCommand = new CutCommand(textEditor);
 
-	    // Set commands on invoker object
-	    invoker.setCommand(copyCommand);
-	    invoker.executeCommand();
+Here's an overview of how the Command pattern works:
 
-	    invoker.setCommand(cutCommand);
-	    invoker.executeCommand();
+1.  The `Invoker` object requests an action to be performed by setting a `Command` object on itself.
 
-	    invoker.setCommand(pasteCommand);
-	    invoker.executeCommand();
-	}
-}
-```
+2.  The `Command` object encapsulates the action and holds a reference to the `Receiver` object that will perform the action.
 
-In the above code, we create an instance of `TextEditor` and `Invoker` classes. We then create instances of the concrete command classes and set them on the `Invoker` object using the `setCommand()` method. Finally, we execute the commands using the `executeCommand()` method on the `Invoker` object.
+3.  The `Invoker` object then calls the `execute()` method on the `Command` object, which in turn calls the appropriate method on the `Receiver` object to perform the action.
 
-When we run the `main()` method, it will output the following:
-Command: Copy
-Command: Cut
-Command: Paste
+4.  The `Receiver` object performs the requested action.
 
-As you can see, the `Invoker` object executes each command without knowing how the actual operations are performed by the receiver object. The receiver object, in this case, the `TextEditor` class, is encapsulated within the concrete command classes, which allows for flexibility and extensibility in the system.
 
-This is just a simple example, but the Command pattern can be useful in a variety of scenarios where we need to decouple the requester from the receiver and provide a flexible and extensible way to perform actions in a system.
+One of the key benefits of using the Command pattern is that it allows for flexibility and extensibility in the system. New commands can easily be added without changing the `Invoker` or `Receiver` objects, which allows for easier maintenance and modification of the system.
+
+### Examples
+
+-   [**Simple Example**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/simpleexample) with design approach described
+-   [**GUI applications**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/guiaplication), where buttons or menus can be associated with different commands.
+-   Multi-level undo/redo operations in text editors or graphics applications.
+-   [**Remote control**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/remotecontrol) systems, where different commands can be sent over a network to control devices.
+-   Transactional systems, where a set of operations can be grouped together as a single transaction.
