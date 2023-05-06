@@ -31,6 +31,6 @@ One of the key benefits of using the Command pattern is that it allows for flexi
 
 -   [**Simple Example**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/simpleexample) with design approach described
 -   [**GUI applications**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/guiaplication), where buttons or menus can be associated with different commands.
--   Multi-level undo/redo operations in text editors or graphics applications.
+-   [**Multi-level undo/redo operations**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/undoredooperations) in text editors or graphics applications.
 -   [**Remote control**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/remotecontrol) systems, where different commands can be sent over a network to control devices.
--   Transactional systems, where a set of operations can be grouped together as a single transaction.
+-   [**Transactional systems**](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/command/transactionalsystems), where a set of operations can be grouped together as a single transaction.

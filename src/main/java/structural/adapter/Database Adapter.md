@@ -47,7 +47,7 @@ public class DatabaseAdapter implements NewDatabase {
     }
 }
 
-// Client code
+// Client code.java
 public class DatabaseClient {
     public static void main(String[] args) {
         LegacyDatabase legacyDatabase = new LegacyDatabaseImpl();
