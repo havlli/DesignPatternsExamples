@@ -8,5 +8,6 @@ In this pattern, the Mediator object is responsible for managing the communicati
 Overall, the Mediator pattern is useful when a system has many objects that need to communicate with each other, but it becomes difficult to manage the interactions between them. By using a mediator, the complexity of the system is reduced, making it easier to maintain and extend over time.
 
 ## Examples
-1. Chat Room Application
-2. Air Traffic Control System
+1. [Chat Room Application](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/mediator/chatroom)
+2. [Air Traffic Control System](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/mediator/atcsystem)
+3. [Car Production Line](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/mediator/carproduction)
