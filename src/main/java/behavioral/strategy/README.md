@@ -8,11 +8,11 @@ The idea behind the strategy pattern is to encapsulate the behavior of an object
 In essence, the strategy pattern allows you to separate the behavior of an object from the object itself, enabling you to switch out different behaviors as needed.
 
 ### Examples
-1.  Sorting Algorithms: In programming, sorting is a common task that involves arranging a collection of data in a specific order. There are various sorting algorithms such as Bubble Sort, Merge Sort, and Quick Sort, which can be implemented using the strategy pattern.
+1.  [Sorting Algorithms](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/strategy/sorting): In programming, sorting is a common task that involves arranging a collection of data in a specific order. There are various sorting algorithms such as Bubble Sort, Merge Sort, and Quick Sort, which can be implemented using the strategy pattern.
 
-2.  Payment Gateways: Payment gateways are services that authorize and process transactions between a merchant and a customer's bank. Different payment gateways use different algorithms to process transactions. The strategy pattern can be used to encapsulate these algorithms and make them interchangeable.
+2.  [Payment Gateways](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/strategy/paymentgateway): Payment gateways are services that authorize and process transactions between a merchant and a customer's bank. Different payment gateways use different algorithms to process transactions. The strategy pattern can be used to encapsulate these algorithms and make them interchangeable.
 
-3.  Navigation: Navigation applications can use the strategy pattern to provide users with different options for finding directions. For example, a user might have the option to choose the fastest route, the most scenic route, or the route with the fewest tolls.
+3.  [Navigation](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/strategy/navigation): Navigation applications can use the strategy pattern to provide users with different options for finding directions. For example, a user might have the option to choose the fastest route, the most scenic route, or the route with the fewest tolls.
 
 ### Simple Example
 Suppose we are building a game that has different levels of difficulty. We want to implement a strategy pattern to encapsulate the different levels of difficulty and make them interchangeable at runtime.
