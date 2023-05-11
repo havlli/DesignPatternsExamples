@@ -16,10 +16,10 @@ In addition to promoting code reuse, the Template Method Pattern can also make y
 Overall, the Template Method Pattern is a powerful design pattern that can help you create more flexible, reusable, and maintainable code.
 
 ### Examples
-1. [Report generation]()
-2. [Automated testing]()
-3. [Database access]()
-4. [Document processing]()
+1. [Report generation](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/template/reportgenerator)
+2. [Automated testing](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/template/automatedtesting)
+3. [Database access](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/template/databaseaccess)
+4. [Document processing](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/template/documentprocessing)
 
 ### Simple Example
 Suppose you are building a simple application that allows users to register and login. You could create a base class called `UserAuthenticator` that defines a template for authenticating a user. The base class might have the following template method:
