@@ -8,10 +8,9 @@ In this pattern, the Visitable objects are not responsible for knowing how to pe
 Overall, the Visitor Pattern is useful when you have a complex object structure and need to perform different operations on that structure. It allows you to add new operations to the system without modifying the existing code.
 
 ### Examples
-1. [Document processing]()
-2. [Compiler design]()
-3. [GUI framework]()
-4. [Database querying]()
+1. [Document processing](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/visitor/documentprocessing)
+2. [Compiler design](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/visitor/compilerdesign)
+3. [GUI framework](https://github.com/havlli/DesignPatternsExamples/tree/master/src/main/java/behavioral/visitor/guiframework)
 
 ### Simple Example
 Let's say we have a computer network that consists of different types of devices, such as routers, switches, and servers. We want to be able to perform different types of operations on these devices, such as configuring them or collecting data from them. However, we don't want to modify the device classes themselves to add these operations.
